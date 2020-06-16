@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFE0">
+
+
+    <ImageButton
+        android:id="@+id/businessman"
+        android:layout_width="165dp"
+        android:layout_height="170dp"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="21dp"
+        android:background="@drawable/businessman"
+        android:contentDescription="some text"/>
+
+    <ImageButton
+        android:id="@+id/farmer"
+        android:layout_width="162dp"
+        android:layout_height="168dp"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="21dp"
+        android:background="@drawable/farmer"
+        android:contentDescription="some text"/>
+
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textColor="#DDA0DD"
+        android:text="Welcome"
+        android:textSize="30dp"
+        android:textStyle="bold"
+         />
+    <TextView
+        android:id="@+id/text2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textColor="#DDA0DD"
+        android:text="Select the type of activity"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:layout_below="@+id/text1"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Shopper or Farmer"
+        android:layout_centerHorizontal="true"
+        android:textColor="#DDA0DD"
+        android:textSize="35dp"
+        android:textStyle="bold"
+        android:layout_below="@+id/text2"
+        />
+
+
+</RelativeLayout>

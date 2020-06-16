@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+package="com.example.antonandreev.deal">
+
+<application
+    android:allowBackup="true"
+    android:icon="@drawable/vegetables"
+    android:label="@string/app_name"
+    android:roundIcon="@drawable/vegetables"
+    android:supportsRtl="true"
+    android:theme="@style/AppTheme">
+    <activity android:name=".FarmerPackage.FarmerUpdateProfile">
+    </activity>
+    <activity android:name=".BusinessmenPackage.BusinessmanUpdateProfile">
+    </activity>
+    <activity android:name=".BusinessmenPackage.BusinessmanProducts">
+    </activity>
+    <activity android:name=".FarmerPackage.FarmerProducts">
+    </activity>
+    <activity android:name=".FarmerPackage.FarmerEntry">
+    </activity>
+    <activity android:name=".BusinessmenPackage.BusinessmanEntry">
+    </activity>
+    <activity android:name=".FarmerPackage.FarmerMain">
+    </activity>
+    <activity android:name=".BusinessmenPackage.BusinessmanMain">
+    </activity>
+
+    <activity android:name=".choice">
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+    </activity>
+
+</application>
+
+</manifest>

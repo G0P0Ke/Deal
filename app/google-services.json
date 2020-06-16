@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "700472176860",
+    "firebase_url": "https://deal-4ead7.firebaseio.com",
+    "project_id": "deal-4ead7",
+    "storage_bucket": "deal-4ead7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:700472176860:android:228c74deecf5effa",
+        "android_client_info": {
+          "package_name": "com.example.antonandreev.deal"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "700472176860-7rqmb5oi29svo0git3dla1r03rg3ijjd.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.antonandreev.deal",
+            "certificate_hash": "bbfca250e8faa46360f55cedfc43565ec69fc858"
+          }
+        },
+        {
+          "client_id": "700472176860-qgvg939uju64u26fegq3fkr824t9nfhc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCisPju4VC6N1AdNP84M_7_pfiGjn4hjss"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "700472176860-qgvg939uju64u26fegq3fkr824t9nfhc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

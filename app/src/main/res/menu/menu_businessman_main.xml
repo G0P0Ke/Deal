@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:id="@+id/menugroup1"
+        android:popupBackground="@android:color/transparent">
+        <item
+            android:id="@+id/profile"
+            android:title="Profile"
+            android:background="@android:color/transparent"/>
+        <item
+            android:id="@+id/updateprofile"
+            android:title="Update Profile"
+            android:background="@android:color/transparent"/>
+        <item
+            android:id="@+id/products"
+            android:title="Products"
+            android:background="@android:color/transparent"/>
+        <item
+            android:id="@+id/orders"
+            android:title="Orders"
+            android:background="@android:color/transparent"
+            />
+
+
+    </group>
+</menu>

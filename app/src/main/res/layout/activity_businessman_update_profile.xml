@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/activity_businessman_update_profile"
+    android:background="@drawable/sun">
+    <Button
+        android:id="@+id/btn_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="Menu"
+        android:textSize="20dp"
+        android:textColor="#000000"
+        android:background="@android:color/transparent"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_menu"
+        android:layout_centerInParent="true"
+        android:id="@+id/first_name"
+        android:hint="FirstName"
+        android:textColor="#000000"
+        android:backgroundTint="#E0FFFF"
+        android:textCursorDrawable="@null"
+        android:textSize="25dp"
+        />
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/second_name"
+        android:layout_below="@id/first_name"
+        android:layout_centerInParent="true"
+        android:hint="SecondName"
+        android:textColor="#000000"
+        android:backgroundTint="#E0FFFF"
+        android:textCursorDrawable="@null"
+        android:textSize="25dp"
+        />
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/telephone"
+        android:layout_below="@id/second_name"
+        android:layout_centerInParent="true"
+        android:hint="Telephone"
+        android:textColor="#000000"
+        android:backgroundTint="#E0FFFF"
+        android:textCursorDrawable="@null"
+        android:inputType="phone"
+        android:textSize="25dp"
+        />
+
+    <TextView
+        android:id="@+id/text2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#FF0000"
+        android:text="*"
+        android:textSize="25dp"
+        android:layout_toRightOf="@id/first_name"
+        android:layout_below="@id/btn_menu"
+        />
+    <TextView
+        android:id="@+id/text3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#FF0000"
+        android:text="*"
+        android:textSize="25dp"
+        android:layout_toRightOf="@id/second_name"
+        android:layout_below="@id/first_name"
+        />
+    <TextView
+        android:id="@+id/text4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#FF0000"
+        android:text="*"
+        android:textSize="25dp"
+        android:layout_toRightOf="@id/telephone"
+        android:layout_below="@id/second_name"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save the changes"
+        android:layout_below="@id/telephone"
+        android:layout_centerInParent="true"
+        android:id="@+id/btn_update_prof"
+        android:background="@android:color/transparent"/>
+
+
+
+</RelativeLayout>
