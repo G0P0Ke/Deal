@@ -42,6 +42,10 @@ public class FarmerMain extends AppCompatActivity implements View.OnClickListene
                                 Intent intent = new Intent(FarmerMain.this, FarmerProducts.class);
                                 startActivity(intent);
                                 return true;
+                            case R.id.Addproducts:
+                                Intent AddNewProduct = new Intent(FarmerMain.this, FarmerAddProducts.class);
+                                startActivity(AddNewProduct);
+                                return true;
                             default:
                                 return false;
                         }

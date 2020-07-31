@@ -13,22 +13,6 @@
         android:layout_height="wrap_content">
 
     </ListView>
-    <EditText
-        android:layout_width="170dp"
-        android:layout_height="50dp"
-        android:layout_alignParentBottom="true"
-        android:id="@+id/new_products"
-        android:layout_toStartOf="@+id/btn_add"/>
-    <Button
-        android:id="@+id/btn_add"
-        android:layout_width="70dp"
-        android:layout_height="50dp"
-        android:layout_alignBaseline="@+id/new_products"
-        android:layout_alignBottom="@id/new_products"
-        android:layout_alignParentEnd="true"
-        android:text="Add" />
-
-
 
 
 </RelativeLayout>

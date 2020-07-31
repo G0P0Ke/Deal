@@ -11,6 +11,8 @@ package="com.example.antonandreev.deal">
     android:theme="@style/AppTheme">
     <activity android:name=".FarmerPackage.FarmerUpdateProfile">
     </activity>
+    <activity android:name=".FarmerPackage.FarmerAddProducts">
+    </activity>
     <activity android:name=".BusinessmenPackage.BusinessmanUpdateProfile">
     </activity>
     <activity android:name=".BusinessmenPackage.BusinessmanProducts">

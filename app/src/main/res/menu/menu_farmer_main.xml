@@ -22,7 +22,10 @@
         android:id="@+id/orders"
         android:background="@android:color/transparent"
         android:title="Orders" />
-
+    <item
+        android:id="@+id/Addproducts"
+        android:background="#00E6DFDF"
+        android:title="Add_Product" />
 
 </group>
 

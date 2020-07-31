@@ -48,13 +48,13 @@ public class FarmerEntry extends AppCompatActivity implements View.OnClickListen
             try{
                 signin(email.getText().toString(), password.getText().toString());
             }catch (Exception e){
-                Toast.makeText(FarmerEntry.this, "Error", Toast.LENGTH_SHORT).show();
+                Toast.makeText(FarmerEntry.this, "Сheck the email and password fields", Toast.LENGTH_SHORT).show();
             }
         }else if(v.getId() == R.id.btn_registration){
             try{
                 signup(email.getText().toString(), password.getText().toString());
             }catch(Exception e){
-                Toast.makeText(FarmerEntry.this, "Error", Toast.LENGTH_SHORT).show();
+                Toast.makeText(FarmerEntry.this, "Сheck the email and password fields", Toast.LENGTH_SHORT).show();
             }
         }
     }

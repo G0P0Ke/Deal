@@ -8,7 +8,6 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.Toast;
 
-import com.example.antonandreev.deal.Products;
 import com.example.antonandreev.deal.R;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
@@ -24,50 +23,21 @@ import java.util.List;
 public class FarmerProducts extends AppCompatActivity {
 
     private FirebaseAuth mAuth;
-    private DatabaseReference myRef;
-    private List<String> ListProducts;
+    private DatabaseReference mDataBase;
 
 
 
-    ListView ListUserProducts;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_farmer_products);
-
-        ListUserProducts = (ListView) findViewById(R.id.list_products);
-
-        myRef = FirebaseDatabase.getInstance().getReference();
-
-        FirebaseUser user = mAuth.getInstance().getCurrentUser();
-
-        Log.d("APP_DEV", user.getUid());
-
-        myRef.child("Farmer").child(user.getUid()).addValueEventListener(new ValueEventListener()  {
-            @Override
-            public void onDataChange(@NonNull DataSnapshot dataSnapshot)  {
-                GenericTypeIndicator<List<String>> t = new GenericTypeIndicator<List<String>>() {};
-                ListProducts = dataSnapshot.getValue(Products.class).getProducts();
-
-                updateUI();
-            }
-
-
-
-
-            @Override
-            public void onCancelled(@NonNull DatabaseError databaseError) {
-                Toast.makeText(FarmerProducts.this, "You don't have products", Toast.LENGTH_SHORT).show();
-            }
-        });
-
+        this.setContentView(R.layout.activity_farmer_products);
 
     }
-    private void updateUI() {
-        ArrayAdapter <String> adapter = new ArrayAdapter<String>(getBaseContext(), android.R.layout.simple_list_item_1,ListProducts);
-        ListUserProducts.setAdapter(adapter);
-    }
+
+
+
 
 }
 
