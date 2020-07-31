@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/activity_farmer_add_products">
+    <Button
+        android:id="@+id/btn_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="Menu"
+        android:textSize="20dp"
+        android:textColor="#000000"
+        android:background="@android:color/transparent"/>
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:id="@+id/product_name"
+        android:hint="Product"
+        android:textColor="#000000"
+        android:backgroundTint="#E0FFFF"
+        android:textCursorDrawable="@null"
+        android:textSize="25dp"
+        />
+
+    <EditText
+        android:id="@+id/product_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/product_name"
+        android:layout_centerInParent="true"
+        android:hint="Price"
+        android:textColor="#000000"
+        android:backgroundTint="#E0FFFF"
+        android:textCursorDrawable="@null"
+        android:textSize="25dp"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/btn_add_new_product"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/product_price"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="0dp"
+        android:background="#FFA500"
+        android:elevation="6dp"
+        android:stateListAnimator="@null"
+        android:text="Add new product"
+        android:textColor="#E0FFFF"
+        android:translationZ="4dp" />
+</RelativeLayout>
+
+
