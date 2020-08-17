@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <Button
+        android:id="@+id/btn_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignBaseline="@+id/btn_show_farmers"
+        android:text="Menu"
+        android:textSize="20dp"
+        android:background="#FFA500"
+        android:textColor="#E0FFFF" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btn_menu"
+        android:text="Продукция Фермера"
+        android:layout_centerHorizontal="true"
+        android:background="#FFA500"
+        android:textColor="#E0FFFF"
+        android:id="@+id/btn_show_products"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_show_products"
+        android:text="Заказать продукт"
+        android:layout_centerHorizontal="true"
+        android:background="#FFA500"
+        android:textColor="#E0FFFF"
+        android:id="@+id/btn_order_products"/>
+    <TextView
+        android:layout_below="@+id/btn_order_products"
+        android:layout_marginTop="10dp"
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:textSize="15dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_height="30dp"
+        android:text="Фамилия Фермера: " />
+    <TextView
+        android:layout_below="@+id/btn_order_products"
+        android:layout_marginTop="10dp"
+        android:id="@+id/FarmerSecondname"
+        android:layout_alignBaseline="@id/textView"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:textSize="15dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_height="30dp"
+        android:text="" />
+    <ListView
+        android:layout_below="@+id/textView"
+        android:choiceMode="multipleChoice"
+        android:id="@+id/list_products"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </ListView>
+</RelativeLayout>

@@ -67,6 +67,10 @@ public class FarmerUpdateProfile extends AppCompatActivity implements View.OnCli
                         Intent intent = new Intent(FarmerUpdateProfile.this, FarmerProducts.class);
                         startActivity(intent);
                         return true;
+                    case R.id.orders:
+                        Intent orders = new Intent(FarmerUpdateProfile.this, FarmerOrders.class);
+                        startActivity(orders);
+                        return true;
                     default:
                         return false;
                 }

@@ -38,8 +38,8 @@ public class BusinessmanMain extends AppCompatActivity implements View.OnClickLi
                                 Intent intent = new Intent(BusinessmanMain.this, BusinessmanUpdateProfile.class);
                                 startActivity(intent);
                                 return true;
-                            case R.id.products:
-                                Intent intent2 = new Intent(BusinessmanMain.this, BusinessmanProducts.class);
+                            case R.id.list_farmers:
+                                Intent intent2 = new Intent(BusinessmanMain.this, BusinessmanFarmersList.class);
                                 startActivity(intent2);
                                 return true;
                             default:

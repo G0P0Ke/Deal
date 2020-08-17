@@ -6,11 +6,12 @@
             android:title="Main"
             android:background="@android:color/transparent"/>
         <item
-            android:id="@+id/list_farmers"
+            android:id="@+id/updateprofile"
+            android:title="Update Profile"
+            android:background="@android:color/transparent"/>
+        <item
+            android:id="@+id/farmer_list"
             android:title="Farmers"
             android:background="@android:color/transparent"/>
-
-
-
     </group>
 </menu>

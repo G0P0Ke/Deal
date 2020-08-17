@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:id="@+id/activity_businessman_update_profile"
-    android:background="@drawable/sun">
+    android:background="@drawable/pole">
     <Button
         android:id="@+id/btn_menu"
         android:layout_width="wrap_content"
@@ -93,7 +93,8 @@
         android:layout_below="@id/telephone"
         android:layout_centerInParent="true"
         android:id="@+id/btn_update_prof"
-        android:background="@android:color/transparent"/>
+        android:background="@android:color/transparent"
+        android:textColor="#000000"/>
 
 
 

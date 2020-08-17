@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-package="com.example.antonandreev.deal">
+    package="com.example.antonandreev.deal">
 
 <application
     android:allowBackup="true"
@@ -15,7 +15,9 @@ package="com.example.antonandreev.deal">
     </activity>
     <activity android:name=".BusinessmenPackage.BusinessmanUpdateProfile">
     </activity>
-    <activity android:name=".BusinessmenPackage.BusinessmanProducts">
+    <activity android:name=".BusinessmenPackage.BusinessmanFarmersList">
+    </activity>
+    <activity android:name=".BusinessmenPackage.BusinessmanFarmerActivity">
     </activity>
     <activity android:name=".FarmerPackage.FarmerProducts">
     </activity>
@@ -24,6 +26,10 @@ package="com.example.antonandreev.deal">
     <activity android:name=".BusinessmenPackage.BusinessmanEntry">
     </activity>
     <activity android:name=".FarmerPackage.FarmerMain">
+    </activity>
+    <activity android:name=".FarmerPackage.FarmerOrders">
+    </activity>
+    <activity android:name=".FarmerPackage.FarmerBusinessmanActivity">
     </activity>
     <activity android:name=".BusinessmenPackage.BusinessmanMain">
     </activity>

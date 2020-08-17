@@ -6,13 +6,21 @@
             android:background="@android:color/transparent"
             android:title="Main" />
         <item
-            android:id="@+id/products"
-            android:background="#00E6DFDF"
+            android:id="@+id/show_product"
+            android:background="@android:color/transparent"
             android:title="Products" />
+        <item
+            android:id="@+id/updateprofile"
+            android:background="#00E6DFDF"
+            android:title="UpdateProfile" />
         <item
             android:id="@+id/orders"
             android:background="@android:color/transparent"
             android:title="Orders" />
+        <item
+            android:id="@+id/add_product"
+            android:background="@android:color/transparent"
+            android:title="Add_Product" />
 
 
     </group>

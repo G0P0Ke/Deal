@@ -70,9 +70,17 @@ public class FarmerAddProducts extends AppCompatActivity implements View.OnClick
                         Intent hoba = new Intent(FarmerAddProducts.this, FarmerMain.class);
                         startActivity(hoba);
                         return true;
+                    case R.id.show_product:
+                        Intent show_product = new Intent(FarmerAddProducts.this, FarmerProducts.class);
+                        startActivity(show_product);
+                        return true;
                     case R.id.updateprofile:
                         Intent intent = new Intent(FarmerAddProducts.this, FarmerUpdateProfile.class);
                         startActivity(intent);
+                        return true;
+                    case R.id.orders:
+                        Intent orders = new Intent(FarmerAddProducts.this, FarmerOrders.class);
+                        startActivity(orders);
                         return true;
                     default:
                         return false;
@@ -86,11 +94,10 @@ public class FarmerAddProducts extends AppCompatActivity implements View.OnClick
     public void onClick(View v) {
         if (v.getId() == R.id.btn_add_new_product) {
             String Name = ProductName.getText().toString();
-            String StringPrice = EditTextPrice.getText().toString();
-            int ProductPrice = Integer.parseInt(StringPrice);
+            String Price = EditTextPrice.getText().toString();
             try {
-                if (TextUtils.isGraphic(Name) && TextUtils.isGraphic(StringPrice)) {
-                    AddNewProduct(Name, ProductPrice);
+                if (TextUtils.isGraphic(Name) && TextUtils.isGraphic(Price)) {
+                    AddNewProduct(Name, Price);
                 }
                 Toast.makeText(FarmerAddProducts.this, "Success", Toast.LENGTH_SHORT).show();
             } catch (Exception e) {
@@ -100,13 +107,13 @@ public class FarmerAddProducts extends AppCompatActivity implements View.OnClick
     }
 
 
-    private void AddNewProduct(String Name, Integer Price) throws Exception{
+    private void AddNewProduct(String Name, String Price) throws Exception{
             onAuthSuccess(mAuth.getCurrentUser(), Name, Price);
         }
-    private void onAuthSuccess(FirebaseUser user, String ProductName, Integer ProductPrice) {
+    private void onAuthSuccess(FirebaseUser user, String ProductName, String ProductPrice) {
         CreateNewProduct(user.getUid(), ProductName, ProductPrice);
     }
-    private void CreateNewProduct(String userId, String ProductName, Integer ProductPrice){
+    private void CreateNewProduct(String userId, String ProductName,String ProductPrice){
         Product product = new Product(ProductPrice);
         mDatabase.child("users").child("Farmers").child(userId).child("Products").child(ProductName).setValue(product);
     }

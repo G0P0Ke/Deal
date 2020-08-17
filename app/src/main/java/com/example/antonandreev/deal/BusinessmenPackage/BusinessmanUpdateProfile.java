@@ -63,8 +63,8 @@ public class BusinessmanUpdateProfile extends AppCompatActivity implements View.
                         Intent hoba = new Intent(BusinessmanUpdateProfile.this, BusinessmanMain.class);
                         startActivity(hoba);
                         return true;
-                    case R.id.products:
-                        Intent intent = new Intent(BusinessmanUpdateProfile.this, BusinessmanProducts.class);
+                    case R.id.list_farmers:
+                        Intent intent = new Intent(BusinessmanUpdateProfile.this, BusinessmanFarmersList.class);
                         startActivity(intent);
                         return true;
                     default:
